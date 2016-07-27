@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+  
+  <div>
+
+   <? 
+    var lastPost = data[0]; 
+    var indexPost = ["Timestamp","Username"];
+    
+   for(var index in lastPost ) { 
+   
+    if ( indexPost.indexOf(index) == -1 ){  
+    var attr = lastPost [index]; 
+   
+    ?>
+<?= index ?>
+<br>
+<?= attr ?>
+
+<br>
+  <? 
+    }
+}
+   
+  ?>  
+   
+</div>
+    
+  </body>
+</html>
+
